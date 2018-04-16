@@ -16,21 +16,24 @@ class List extends React.Component {
   render(){
     if(this.props.users){
       return(
-        <div>
-          <ul>{this.props.users.map(user => (
-            <li>
-              <img src={user.photo}></img>
+        <div style={{width: '80%'}}>
+          <ul style={{padding: 0}}>{this.props.users.map(user => (
+            <div className='person'>
+              <img className='image' src={user.photo}></img>
               <p>Name: {user.name}</p>
               <p>Phone Number: {user.number}</p>
               <p>Age: {user.age}</p>
-            </li>
+              <p style={{color: 'grey'}}>Bio: {user.bio}</p>
+            </div>
           )
           )}</ul>
         </div>
       );
     } else {
       return(
-        <div>loading</div>
+        <div>
+          <img src='https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif'></img>
+        </div>
       )
     }
 
