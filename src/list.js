@@ -20,7 +20,7 @@ class List extends React.Component {
           <ul style={{padding: 0}}>{this.props.users.map(user => (
             <div className='person'>
               <img className='image' src={user.photo}></img>
-              <p>Name: {user.name}</p>
+              <p style={{color: 'black', fontSize:'24px', fontWeight:'bold'}}>{user.name.charAt(0).toUpperCase() + user.name.slice(1)}</p>
               <p>Phone Number: {user.number}</p>
               <p>Age: {user.age}</p>
               <p style={{color: 'grey'}}>Bio: {user.bio}</p>

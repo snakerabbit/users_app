@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
 }
+p {
+  margin: 10px;
+}
 
 .person {
   border: solid lightgrey 1px;
