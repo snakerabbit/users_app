@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as APIUtil from './util/users_util';
+import {fetchUsers} from './actions/user_actions';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+  }
+
+  componentDidMount(){
+  }
   render() {
     return (
       <div className="App">
